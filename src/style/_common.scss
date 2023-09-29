@@ -49,4 +49,7 @@ body {
   max-width: 1320px;
   width: 90%;
   margin: 0 auto;
+  @media (max-width: 500px) {
+    width: calc(100% - 20px);
+  }
 }
