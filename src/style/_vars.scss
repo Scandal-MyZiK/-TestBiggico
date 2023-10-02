@@ -1,6 +1,45 @@
 //background-colors
-$main-background: #ffffff;
+$background-main: #ffffff;
+$background-section: #f7f8fd;
+
+$background-main-table: #f5f5f5;
+$background-line-table: #005283;
+$background-third-table: #deecfa;
+$background-row-table: #3c647b;
+$background-row-light-table: #f5f5f5;
+
+$background-cards-light: rgba(235, 236, 245, 0.65);
+$background-cards: rgba(49, 54, 74, 0.55);
+
+$background-accordion: #f1f3fd;
+
+$background-logo: linear-gradient(148deg, #313446 19.06%, #070b1f 97.93%);
+$background-logo-light: linear-gradient(
+  163deg,
+  #313446 -13.44%,
+  #070b1f 150.61%
+);
+
+$background-circle-red: #db0202;
+$background-circle-greeen: #4ec757;
+$background-circle-grey: #9b9b9b;
 
 //text-colors
+$color-white: #fff;
+$color-black: #000;
+
 $color-main: #72768d;
+$color-secondary: rgba(255, 255, 255, 0.9);
 $color-title: #313446;
+$color-text-light: #7a7e9b;
+$color-secondary-light: rgba(255, 255, 255, 0.8);
+$color-gold: linear-gradient(180deg, #f90 0%, #ff630c 100%);
+$color-gold-light: linear-gradient(180deg, #ffc736 0%, #ff630c 100%);
+
+// button-colors
+$btn-primary: #53af1b;
+$btn-secondary: #6f728c;
+
+// border-line
+$border-primary: #ebecf5;
+$modifier-line: #a6aac3;

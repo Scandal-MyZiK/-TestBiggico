@@ -1,5 +1,5 @@
 .pari-match {
-  margin-top: 16px;
+  padding-top: 16px;
   &__container {
     display: grid;
     grid-template-columns: 9fr 3fr;
@@ -11,7 +11,7 @@
 }
 
 .pari-match-body {
-  background: linear-gradient(148deg, #313446 19.06%, #070b1f 97.93%);
+  background: $background-logo;
   border-radius: 15px;
   display: flex;
   @media (max-width: 950px) {
@@ -51,14 +51,11 @@
     @media (max-width: 526px) {
       gap: 10px;
     }
-    // @media (max-width: 427px) {
-    //   flex-wrap: wrap;
-    // }
   }
   &__photo {
     padding: 41px;
     border-radius: 15px;
-    background: linear-gradient(163deg, #313446 -13.44%, #070b1f 150.61%);
+    background: $background-logo-light;
     max-width: 217px;
     @media (max-width: 640px) {
       padding: 34px 14px;
@@ -87,7 +84,7 @@
     align-items: center;
   }
   &__title {
-    color: #fff;
+    color: $color-white;
     font-size: 20px;
     font-weight: 500;
     @media (max-width: 526px) {
@@ -113,7 +110,7 @@
     }
   }
   &__number {
-    color: #fff;
+    color: $color-white;
     font-weight: 500;
   }
   &__block-stars {
@@ -175,16 +172,16 @@
     }
   }
   &__desc {
-    color: rgba(255, 255, 255, 0.9);
+    color: $color-secondary;
     @media (max-width: 526px) {
       font-size: 12px;
-      color: rgba(255, 255, 255, 0.8);
+      color: $color-secondary-light;
     }
   }
   &__right {
     border-radius: 15px;
     background: url("../image/pari-match_white.svg") top center no-repeat,
-      linear-gradient(148deg, #313446 19.06%, #070b1f 97.93%);
+      $background-logo;
     padding: 114px 20px 20px;
     @media (max-width: 1395px) {
       max-width: none;
@@ -201,7 +198,7 @@
       @media (max-width: 950px) {
         display: block;
         border-radius: 15px;
-        background: linear-gradient(148deg, #313446 19.06%, #070b1f 97.93%);
+        background: $background-logo;
         padding: 10px;
       }
     }
@@ -232,7 +229,7 @@
   }
   &__gratters {
     font-weight: 500;
-    background: linear-gradient(180deg, #f90 0%, #ff630c 100%);
+    background: $color-gold;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -241,7 +238,7 @@
     }
   }
   &__bonus {
-    color: #fff;
+    color: $color-white;
     font-size: 24px;
     font-weight: 700;
     @media (max-width: 526px) {
@@ -254,8 +251,8 @@
   }
   &__btn {
     border-radius: 10px;
-    background: #53af1b;
-    color: #ffffff;
+    background: $btn-primary;
+    color: $color-white;
     padding: 17px 0;
     text-align: center;
     cursor: pointer;
@@ -312,7 +309,7 @@
   }
   &__item {
     border-radius: 5px;
-    background: rgba(49, 54, 74, 0.55);
+    background: $background-cards;
     width: 69px;
     height: 44px;
     display: flex;
@@ -344,7 +341,7 @@
 }
 
 .pari-match-info {
-  background-color: #f7f8fd;
+  background-color: $background-section;
   border-radius: 15px;
   padding: 20px;
   @media (max-width: 450px) {
@@ -381,7 +378,7 @@
     }
   }
   &__title {
-    color: #000;
+    color: $color-black;
     font-weight: 500;
     @media (max-width: 600px) {
       font-size: 12px;
@@ -395,7 +392,7 @@
 }
 
 .pari-match-comment {
-  background-color: #f7f8fd;
+  background-color: $background-section;
   border-radius: 15px;
   padding: 20px;
   @media (max-width: 400px) {
@@ -412,17 +409,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     @media (max-width: 500px) {
-      max-width: none;
       justify-content: flex-start;
-      gap: 10px;
     }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
   }
   &__img {
     max-width: 31px;
   }
   &__title {
-    color: #313446;
+    color: $color-title;
     font-size: 18px;
     font-weight: 500;
     @media (max-width: 600px) {
@@ -433,14 +433,14 @@
     }
   }
   &__text {
-    color: #313446;
+    color: $color-title;
     font-size: 12px;
     @media (max-width: 500px) {
       font-size: 10px;
     }
   }
   &__desc {
-    color: #7a7e9b;
+    color: $color-text-light;
     font-size: 16px;
     line-height: 25px;
     @media (max-width: 600px) {

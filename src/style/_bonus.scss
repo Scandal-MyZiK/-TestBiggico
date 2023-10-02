@@ -1,21 +1,23 @@
 .bonus {
-  margin-top: 22px;
+  padding-top: 22px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   &__container {
     border-radius: 15px;
-    background-color: #f7f8fd;
+    background-color: $background-section;
     position: relative;
+  }
+  &__signboard {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 
 .bonus-signboard {
-  position: absolute;
-  top: -5px;
-  left: 0;
-  right: 0;
-  margin: auto;
   width: 221px;
   display: flex;
   align-items: center;
@@ -36,7 +38,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    color: #fff;
+    color: $color-white;
     font-size: 14px;
     font-weight: 500;
     @media (max-width: 600px) {
@@ -49,6 +51,7 @@
   }
   &__img {
     max-width: 221px;
+    height: auto;
     @media (max-width: 600px) {
       max-width: 181px;
     }
@@ -63,7 +66,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 26px 16px;
-  border-bottom: 2px solid #ebecf5;
+  border-bottom: 2px solid $border-primary;
   @media (max-width: 700px) {
     padding: 20px 15px;
   }
@@ -84,7 +87,7 @@
     margin-right: 14px;
     font-size: 18px;
     font-weight: 500;
-    background: linear-gradient(180deg, #ffc736 0%, #ff630c 100%);
+    background: $color-gold-light;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -101,7 +104,7 @@
     }
   }
   &__text {
-    color: #313446;
+    color: $color-title;
     font-size: 18px;
     font-weight: 500;
     @media (max-width: 600px) {
@@ -113,7 +116,7 @@
     align-items: flex-end;
   }
   &__numbers {
-    color: #313446;
+    color: $color-title;
     line-height: 1;
     font-size: 17px;
     font-weight: 500;
@@ -165,7 +168,7 @@
     }
     @media (max-width: 600px) {
       padding-bottom: 10px;
-      border-bottom: 2px solid #ebecf5;
+      border-bottom: 2px solid $border-primary;
     }
     @media (max-width: 350px) {
       gap: 9px;
@@ -176,7 +179,7 @@
     max-width: 148px;
     padding: 42px 18px;
     border-radius: 15px;
-    background: linear-gradient(148deg, #313446 19.06%, #070b1f 97.93%);
+    background: $background-logo;
     @media (max-width: 630px) {
       padding: 28px 18px;
     }
@@ -224,12 +227,12 @@
     max-width: 17px;
   }
   &__title {
-    color: #72768d;
+    color: $color-main;
     font-size: 14px;
     font-weight: 500;
   }
   &__subtitle {
-    color: #313446;
+    color: $color-title;
     font-size: 24px;
     font-weight: 700;
     @media (max-width: 700px) {
@@ -326,11 +329,11 @@
     }
   }
   &__btn {
-    color: #ffffff;
+    color: $color-white;
     width: 100%;
     border-radius: 10px;
-    background-color: #53af1b;
-    padding: 18px 48px;
+    background-color: $btn-primary;
+    padding: 18px;
     @media (max-width: 700px) {
       padding: 15px 48px;
     }
@@ -338,8 +341,8 @@
       font-size: 12px;
     }
     &--grey {
-      background-color: #ebecf5;
-      color: #6f728c;
+      background-color: $border-primary;
+      color: $btn-secondary;
     }
   }
 }
@@ -377,7 +380,7 @@
       width: 86px;
       height: 2px;
       flex-shrink: 0;
-      background-color: #a6aac3;
+      background-color: $modifier-line;
       @media (max-width: 600px) {
         width: 40%;
       }
@@ -426,7 +429,7 @@
     width: 53px;
     height: 34px;
     border-radius: 5px;
-    background: rgba(235, 236, 245, 0.65);
+    background-color: $background-cards-light;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -447,7 +450,7 @@
 
 .bonus-accordion {
   padding: 0px 15px;
-  background-color: #f1f3fd;
+  background-color: $background-accordion;
   display: flex;
   border-radius: 0px 0px 15px 15px;
   transform: scaleY(0);
@@ -499,7 +502,7 @@
   }
   &__list {
     border-radius: 15px;
-    border: 2px solid #ebecf5;
+    border: 2px solid $border-primary;
     padding: 15px;
     max-width: 404px;
     width: 100%;

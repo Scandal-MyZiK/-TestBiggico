@@ -1,5 +1,4 @@
 const path = require("path");
-const fs = require("fs");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -8,9 +7,6 @@ const mode = process.env.NODE_ENV || "development";
 const devMode = mode === "development";
 const target = devMode ? "web" : "browserslist";
 const devtool = devMode ? "source-map" : undefined;
-const pages = fs
-  .readdirSync(path.resolve(__dirname, "src"))
-  .filter((fileName) => fileName.endsWith(".html"));
 
 module.exports = {
   mode,
@@ -29,19 +25,16 @@ module.exports = {
     assetModuleFilename: "assets/[name][ext]",
   },
   plugins: [
-    // ...pages.map(
-    //   (page) =>
-    //     new HtmlWebpackPlugin({
-    //       template: `src/${page}`,
-    //       filename: `./${page}`,
-    //     })
-    // ),
+    new HtmlWebpackPlugin({
+      template: `src/index.html`,
+    }),
     new HtmlWebpackPlugin({
       template: `src/pari-match.html`,
       filename: `./pari-match.html`,
     }),
     new HtmlWebpackPlugin({
-      template: `src/index.html`,
+      template: `src/pari-match.html`,
+      filename: `./rates.html`,
     }),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",

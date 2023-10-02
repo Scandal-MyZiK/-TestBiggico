@@ -5,6 +5,8 @@
 h1,
 h2,
 h3,
+h4,
+h5,
 p {
   margin: 0;
 }
@@ -42,7 +44,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: $color-main;
-  background-color: $main-background;
+  background-color: $background-main;
 }
 
 .container {
@@ -51,5 +53,10 @@ body {
   margin: 0 auto;
   @media (max-width: 500px) {
     width: calc(100% - 20px);
+  }
+  &--small {
+    max-width: 994px;
+    width: 90%;
+    margin: 0 auto;
   }
 }
