@@ -33,7 +33,7 @@ module.exports = {
       filename: `./pari-match.html`,
     }),
     new HtmlWebpackPlugin({
-      template: `src/pari-match.html`,
+      template: `src/rates.html`,
       filename: `./rates.html`,
     }),
     new MiniCssExtractPlugin({
